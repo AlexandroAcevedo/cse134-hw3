@@ -137,6 +137,7 @@ portfolio-note {
   border-left: 0.3rem solid var(--primary-color);
 }
 
+/* Responsive media */
 img,
 video {
   display: block;
@@ -149,6 +150,22 @@ img {
 }
 
 /* Forms */
+form {
+  max-width: 50rem;
+}
+
+fieldset {
+  margin: 0;
+  padding: 1.5rem;
+  border: 0.1rem solid #b8bec7;
+  border-radius: 0.5rem;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+
 input,
 textarea,
 button {
@@ -157,13 +174,23 @@ button {
 
 input,
 textarea {
-  max-width: 100%;
-  padding: 0.5em;
+  width: 100%;
+  max-width: 30rem;
+  padding: 0.6em;
+  border: 0.1rem solid #8b929c;
+  border-radius: 0.25rem;
+  background-color: white;
+}
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
 }
 
 button {
   padding: 0.6em 1em;
   border: 0.1rem solid var(--primary-color);
+  border-radius: 0.25rem;
   background-color: var(--primary-color);
   color: white;
   cursor: pointer;
@@ -201,5 +228,18 @@ progress {
 
   main > section {
     padding: 1rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  fieldset {
+    padding: 1rem;
+  }
+
+  input,
+  textarea {
+    max-width: 100%;
   }
 }
